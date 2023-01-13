@@ -23,16 +23,6 @@ const desencriptacion = texto => {
 
 let  textoFinal = '';
 
-function verAcentos( texto ) {
-    let resultado = acentos.test( texto )
-    if ( resultado != false ) {
-        error.classList.add( "error" ); 
-    } else {
-        error.classList.remove( "error" );
-    }
-    return  resultado;
-}
-
 function encriptar() {
     textoFinal = '';
     let textoInicial = texto.value.toLowerCase();
@@ -66,3 +56,15 @@ function desencriptar() {
 copiar.addEventListener('click', ()=>{
     navigator.clipboard.writeText( textoFinal );
 })
+
+
+function verAcentos( texto ) {
+    let resultado = acentos.test( texto )
+    if ( resultado != false ) {
+        error.classList.add( "error" ); 
+    } else {
+        error.classList.remove( "error" );
+    }
+    return  resultado;
+}
+
