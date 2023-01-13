@@ -56,9 +56,9 @@ body{background-color: rgb(57, 57, 228, 0.808);}
 }
 
 .btn-primary{
-    background-color: rgba(57, 57, 228, 0.808);
+    background-color: rgba(255, 255, 255);
     border: 1px solid rgba(57, 57, 228, 0.808);
-    color: #fff;
+   
 }
 
 .btn-primary:hover{
